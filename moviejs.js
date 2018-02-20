@@ -12,7 +12,7 @@ function getData() {
             var data = JSON.parse(this.responseText);
             document.getElementById("actors").innerHTML = data.Actors;
             document.getElementById("year").innerHTML = data.Year;
-            document.getElementById("runtime").innerHTML = data.RunTime;
+            document.getElementById("runtime").innerHTML = data.Runtime;
             document.getElementById("rated").innerHTML = data.Rated;
             document.getElementById("genre").innerHTML = data.Genre;
             document.getElementById("poster").setAttribute("src", data.Poster);
