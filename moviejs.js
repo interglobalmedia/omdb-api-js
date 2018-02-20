@@ -4,7 +4,7 @@ function getData() {
     const span = container.getElementsByTagName('span').textContent;
     const url = 'https://www.omdbapi.com/?apikey=60f7bdd3&t=' + movie;
     //Using Javascript to get AJAX data
-    var xhttps = new XMLHttpRequest();
+    const xhttps = new XMLHttpRequest();
     xhttps.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             console.log(this.responseText);
@@ -21,6 +21,7 @@ function getData() {
     xhttps.open("GET", url, true);
     xhttps.send();
 }
+
 const button = document.getElementById('btn');
 button.addEventListener('click', () => {
     getData();
