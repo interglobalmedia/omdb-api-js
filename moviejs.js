@@ -18,8 +18,8 @@ function getData() {
             document.getElementById("poster").setAttribute("src", data.Poster);
         }
     };
-    xhttp.open("GET", url, true);
-    xhttp.send();
+    xhttps.open("GET", url, true);
+    xhttps.send();
 }
 const button = document.getElementById('btn');
 button.addEventListener('click', () => {
