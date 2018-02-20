@@ -2,7 +2,7 @@
 function getData() {
     const movie = document.getElementById('movie').value;
     const span = container.getElementsByTagName('span').textContent;
-    const url = 'http://www.omdbapi.com/?apikey=60f7bdd3&t=' + movie;
+    const url = 'https://www.omdbapi.com/?apikey=60f7bdd3&t=' + movie;
     //Using Javascript to get AJAX data
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -18,8 +18,8 @@ function getData() {
             document.getElementById("poster").setAttribute("src", data.Poster);
         }
     };
-    xhttp.open("GET", url, true);
-    xhttp.send();
+    xhttps.open("GET", url, true);
+    xhttps.send();
 }
 const button = document.getElementById('btn');
 button.addEventListener('click', () => {
