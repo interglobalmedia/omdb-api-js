@@ -3,7 +3,6 @@ function getData() {
     const movie = document.getElementById('movie').value;
     const span = container.getElementsByTagName('span').textContent;
     const url = 'https://www.omdbapi.com/?apikey=60f7bdd3&t=' + movie;
-    //Using Javascript to get AJAX data
     const xhttps = new XMLHttpRequest();
     xhttps.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
