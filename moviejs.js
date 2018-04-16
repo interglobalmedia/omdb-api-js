@@ -1,6 +1,7 @@
 /* http://www.omdbapi.com/?i=tt3896198&apikey=60f7bdd3  */
 function getData() {
     const movie = document.getElementById('movie').value;
+    const container = document.getElementById('container');
     const span = container.getElementsByTagName('span').textContent;
     const url = 'https://www.omdbapi.com/?apikey=60f7bdd3&t=' + movie;
     const xhttps = new XMLHttpRequest();
