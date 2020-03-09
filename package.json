@@ -1,0 +1,26 @@
+{
+  "name": "omdb-api",
+  "version": "1.0.0",
+  "description": "A little movie application retrieving data from the omdb api using JavaScript and AJAX.",
+  "main": "moviejs.js",
+  "scripts": {
+    "clean": "rm -rf dist/ && mkdir dist/",
+    "scss": "node-sass --watch styles/scsss -o styles/css",
+    "build": "cp -R scripts styles dist/ && cp index.html dist/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interglobalmedia/omdb-api-js.git"
+  },
+  "author": "Maria D. Campbell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/interglobalmedia/omdb-api-js/issues"
+  },
+  "homepage": "https://github.com/interglobalmedia/omdb-api-js#readme",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.13.1"
+  }
+}
