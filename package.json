@@ -2,10 +2,10 @@
   "name": "omdb-api",
   "version": "1.0.0",
   "description": "A little movie application retrieving data from the omdb api using JavaScript and AJAX.",
-  "main": "moviejs.js",
+  "main": "movies.js",
   "scripts": {
     "clean": "rm -rf dist/ && mkdir dist/",
-    "scss": "node-sass --watch styles/scsss -o styles/css",
+    "scss": "node-sass --watch styles/scss -o styles/css",
     "build": "cp -R scripts styles dist/ && cp index.html dist/",
     "deploy": "gh-pages -d dist"
   },
