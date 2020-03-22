@@ -52,7 +52,14 @@
         </div>
     </div>
     <footer id="credits">
-        <p>© 2020 Maria D. Campbell</p>
+        <script>
+            const theDate = new Date();
+            const footer = document.querySelector("#credits");
+            footer.style.fontWeight = "600";
+            footer.style.letterSpacing = "0.07rem";
+            footer.innerHTML =
+                `<p>© ${theDate.getFullYear()} Maria D. Campbell</p>`;
+        </script>
     </footer>
     <script src="scripts/js/movies.js"></script>
 </body>
