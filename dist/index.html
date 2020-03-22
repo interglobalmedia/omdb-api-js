@@ -7,42 +7,50 @@
     <title>OMDB Api Using JavaScript</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/css/moviejs.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Guntur&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/movies.css">
 </head>
 
-<body>
-    <div id="container">
-        <h1>Movie Information</h1>
-        <div>
-            <img src="" id="poster">
+<body class="Site">
+    <div class="Site-content">
+        <div id="container">
+            <h1>Movie Information</h1>
+            <div class="section">
+                <img src="" id="poster">
+            </div>
+            <div class="section">
+                <label>Movie Title:</label>
+                <input type="text" name="movie" id="movie" size="30" autofocus>
+            </div>
+            <div class="section">
+                <label>Actors:</label>
+                <span id="actors"></span>
+            </div>
+            <div class="section">
+                <label>Year:</label>
+                <span id="year"></span>
+            </div>
+            <div class="section">
+                <label>Run Time: </label>
+                <span id="runtime"></span>
+            </div>
+            <div class="section">
+                <label>Rated: </label>
+                <span id="rated"></span>
+            </div>
+            <div class="section">
+                <label>Genre: </label>
+                <span id="genre"></span>
+            </div>
+            <div class="section">
+                <button id="btn">Get Movie Info</button>
+            </div>
         </div>
-        <div>
-            <label>Movie Title:</label>
-            <input type="text" name="movie" id="movie">
-        </div>
-        <div>
-            <label>Actors:</label>
-            <span id="actors"></span>
-        </div>
-        <div>
-            <label>Year:</label>
-            <span id="year"></span>
-        </div>
-        <div>
-            <label>Run Time: </label>
-            <span id="runtime"></span>
-        </div>
-        <div>
-            <label>Rated: </label>
-            <span id="rated"></span>
-        </div>
-        <div>
-            <label>Genre: </label>
-            <span id="genre"></span>
-        </div>
-        <button id="btn">Get Movie Info</button>
-
-        <script src="scripts/js/moviejs.js"></script>
+    </div>
+    <footer id="credits">
+        <p>© 2020 Maria D. Campbell</p>
+    </footer>
+    <script src="scripts/js/movies.js"></script>
 </body>
 
 </html>

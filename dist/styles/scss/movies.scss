@@ -1,0 +1,76 @@
+body {
+    font-family: 'Hind Guntur',
+        sans-serif;
+}
+
+#container {
+    margin: 3rem auto;
+    text-align: center;
+    display: block;
+    width: 90%;
+}
+
+#movie {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+label {
+    color: #90335d;
+}
+
+label,
+span {
+    font-size: 1.3rem;
+}
+
+#btn {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background: #ffc0d3;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 2rem;
+}
+
+#credits {
+
+    p {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: -1.5rem;
+    }
+}
+
+// Sticky Footer Styling
+:root {
+    --space: 1.5em 0;
+    --space: 2em 0;
+}
+
+.Site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Site-content {
+    flex: 1 0 auto;
+    padding: var(--space) var(--space) 0;
+    width: 100%;
+}
+
+.Site-content:after {
+    content: '\00a0';
+    display: block;
+    margin-top: var(--space);
+    height: 0;
+    visibility: hidden;
+}
