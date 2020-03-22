@@ -22,6 +22,10 @@ label,
 span {
   font-size: 1.3rem; }
 
+img {
+  width: 90%;
+  max-width: 600px; }
+
 #btn {
   padding: 5px;
   border-radius: 5px;
