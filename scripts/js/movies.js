@@ -5,7 +5,7 @@ function getData() {
   const url = `https://www.omdbapi.com/?apikey=60f7bdd3&t=${movie}`;
   const xhttps = new XMLHttpRequest();
   xhttps.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState === 4 && this.status === 200) {
       console.log(this.responseText);
       console.log(JSON.parse(this.responseText));
       const data = JSON.parse(this.responseText);
