@@ -9,6 +9,7 @@ function getData() {
       console.log(this.responseText);
       console.log(JSON.parse(this.responseText));
       const data = JSON.parse(this.responseText);
+      document.getElementById("director").innerHTML = data.Director;
       document.getElementById("actors").innerHTML = data.Actors;
       document.getElementById("year").innerHTML = data.Year;
       document.getElementById("runtime").innerHTML = data.Runtime;
