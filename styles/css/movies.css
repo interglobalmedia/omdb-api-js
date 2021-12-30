@@ -50,10 +50,6 @@ img {
   margin-bottom: -1.5rem;
   font-size: 1.3rem; }
 
-.error-message:first-of-type {
-  display: block;
-  color: red; }
-
 .error-message {
   display: none; }
 
