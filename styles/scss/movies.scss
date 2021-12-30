@@ -1,5 +1,14 @@
 body {
     font-family: "Hind Guntur", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.Site-content {
+    flex: 1;
+    width: 100%;
 }
 
 #container {
@@ -52,28 +61,15 @@ img {
     }
 }
 
-// Sticky Footer Styling
-:root {
-    --space: 1.5em 0;
-    --space: 2em 0;
-}
-
-.Site {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.Site-content {
-    flex: 1 0 auto;
-    padding: var(--space) var(--space) 0;
-    width: 100%;
-}
-
-.Site-content:after {
-    content: "\00a0";
+.error-message:first-of-type {
     display: block;
-    margin-top: var(--space);
-    height: 0;
-    visibility: hidden;
+    color: red;
+}
+
+.error-message {
+    display: none;
+}
+
+img[src="undefined"] {
+    display: none;
 }
