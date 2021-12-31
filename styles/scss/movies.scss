@@ -1,5 +1,5 @@
 body {
-    font-family: "Hind Guntur", sans-serif;
+    font-family: 'Hind Guntur', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +41,15 @@ img {
     max-width: 600px;
 }
 
-#btn {
+.btns-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem auto 0;
+    width: 50%;
+}
+
+#btn-info,
+#btn-refresh {
     padding: 5px;
     border-radius: 5px;
     font-size: 1.1rem;
@@ -51,6 +59,8 @@ img {
     cursor: pointer;
     outline: none;
     margin-bottom: 2rem;
+    max-width: 8rem;
+    width: 100%;
 }
 
 #credits {
@@ -65,6 +75,6 @@ img {
     display: none;
 }
 
-img[src="undefined"] {
+img[src='undefined'] {
     display: none;
 }
