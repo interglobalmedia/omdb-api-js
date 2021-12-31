@@ -1,4 +1,3 @@
-/* http://www.omdbapi.com/?i=tt3896198&apikey=60f7bdd3  */
 function getData() {
     const movie = document.getElementById('movie').value
     const url = `https://www.omdbapi.com/?apikey=60f7bdd3&t=${movie}`
