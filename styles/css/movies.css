@@ -80,5 +80,5 @@ img {
 .error-message {
   display: none; }
 
-img[src='undefined'] {
+img[src='undefined'], img[src='N/A'] {
   display: none; }
