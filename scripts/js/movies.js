@@ -19,6 +19,8 @@ function getData() {
                 console.log(this.responseText)
                 console.log(JSON.parse(this.responseText))
                 const data = JSON.parse(this.responseText)
+                document.getElementById('title').innerHTML =
+                    data.Title || ``;
                 document.getElementById('director').innerHTML =
                     data.Director || ``
                 document.getElementById('actors').innerHTML = data.Actors || ``
