@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OMDB Api Using JavaScript</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Guntur&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/movies.css">
+</head>
+
+<body class="Site">
+    <div class="Site-content">
+        <div id="container">
+            <h1>Movie Information</h1>
+            <p class="error-message"></p>
+            <div class="section">
+                <img src="" id="poster">
+            </div>
+            <div class="section">
+                <label>Movie Title:</label>
+                <input type="text" name="movie" id="movie" size="25" autofocus>
+            </div>
+            <div class="section">
+                <label>Actors:</label>
+                <span id="actors"></span>
+            </div>
+            <div class="section">
+                <label>Director:</label>
+                <span id="director"></span>
+            </div>
+            <div class="section">
+                <label>Year:</label>
+                <span id="year"></span>
+            </div>
+            <div class="section">
+                <label>Run Time: </label>
+                <span id="runtime"></span>
+            </div>
+            <div class="section">
+                <label>Rated: </label>
+                <span id="rated"></span>
+            </div>
+            <div class="section">
+                <label>Genre: </label>
+                <span id="genre"></span>
+            </div>
+            <div class="section btns-wrapper">
+                <button id="btn-info">Get Movie Info</button>
+                <button id="btn-refresh">Refresh</button>
+            </div>
+        </div>
+    </div>
+    <footer id="credits">
+        <script>
+            const theDate = new Date();
+            const footer = document.querySelector("#credits");
+            footer.style.fontWeight = "600";
+            footer.style.letterSpacing = "0.07rem";
+            footer.innerHTML =
+                `<p>© ${theDate.getFullYear()} Maria D. Campbell</p>`;
+        </script>
+    </footer>
+    <script src="scripts/js/movies.js"></script>
+</body>
+
+</html>
