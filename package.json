@@ -9,7 +9,7 @@
         "clean": "rm -rf dist/ && mkdir dist/",
         "cleanSCSS": "rm -rf dist/styles/scss",
         "scss": "node-sass --watch styles/scss -o styles/css",
-        "build": "cp -R scripts styles dist/ && cp index.html dist/",
+        "build": "cp -R scripts styles dist/ && cp favicon.ico index.html dist/",
         "deploy": "gh-pages -d dist"
     },
     "repository": {
