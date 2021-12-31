@@ -1,26 +1,32 @@
 {
-  "name": "omdb-api",
-  "version": "1.0.0",
-  "description": "A little movie application retrieving data from the omdb api using JavaScript and AJAX.",
-  "main": "movies.js",
-  "scripts": {
-    "clean": "rm -rf dist/ && mkdir dist/",
-    "scss": "node-sass --watch styles/scss -o styles/css",
-    "build": "cp -R scripts styles dist/ && cp index.html dist/",
-    "deploy": "gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/interglobalmedia/omdb-api-js.git"
-  },
-  "author": "Maria D. Campbell",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/interglobalmedia/omdb-api-js/issues"
-  },
-  "homepage": "https://github.com/interglobalmedia/omdb-api-js#readme",
-  "dependencies": {
-    "gh-pages": "^3.2.3",
-    "node-sass": "^7.0.1"
-  }
+    "name": "omdb-api",
+    "version": "1.0.0",
+    "description": "A little movie application retrieving data from the omdb api using JavaScript and AJAX.",
+    "main": "movies.js",
+    "scripts": {
+        "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
+        "format": "npm run prettier -- --write",
+        "clean": "rm -rf dist/ && mkdir dist/",
+        "cleanSCSS": "rm -rf dist/styles/scss",
+        "scss": "node-sass --watch styles/scss -o styles/css",
+        "build": "cp -R scripts styles dist/ && cp index.html dist/",
+        "deploy": "gh-pages -d dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/interglobalmedia/omdb-api-js.git"
+    },
+    "author": "Maria D. Campbell",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/interglobalmedia/omdb-api-js/issues"
+    },
+    "homepage": "https://github.com/interglobalmedia/omdb-api-js#readme",
+    "dependencies": {
+        "gh-pages": "^3.2.3",
+        "node-sass": "^7.0.1"
+    },
+    "devDependencies": {
+        "prettier": "^2.5.1"
+    }
 }
