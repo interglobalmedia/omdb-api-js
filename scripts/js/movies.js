@@ -41,7 +41,6 @@ function getData() {
                 errorPara.style.display = 'block'
                 errorPara.style.color = 'red'
                 errorPara.innerHTML = `${message}`
-                document.getElementsByName('span').innerHTML = `${message}`
             } else {
                 return
             }
